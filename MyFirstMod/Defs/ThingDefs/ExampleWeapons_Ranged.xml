@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Example weapon: saw launcher -->
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>ExampleGun_SawLauncher</defName>
+        <label>saw launcher</label>
+        <description>A heavy industrial circular saw used for both construction and
+            demolition.\n\nSome madman has modified this tool to allow its blades to be shot out at
+            high velocity, rendering it a short-ranged but devastating weapon.</description>
+        <graphicData>
+            <texPath>MyFirstMod/Example_SawLauncher</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+            <Steel>80</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <WorkToMake>15000</WorkToMake>
+            <Mass>9.9</Mass>
+            <AccuracyTouch>0.85</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.70</AccuracyMedium>
+            <AccuracyLong>0.56</AccuracyLong>
+            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <ConstructionSpeed>0.10</ConstructionSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>ExampleBullet_SawBlade</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <range>12.9</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <soundCast>ExampleWeapon_SawLauncher</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>0</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Demolish</li>
+                </capacities>
+                <power>13</power>
+                <cooldownTime>2</cooldownTime>
+                <soundMeleeHit>ExampleWeapon_SawLauncherMelee</soundMeleeHit>
+                <soundMeleeMiss>ExampleWeapon_SawLauncher</soundMeleeMiss>
+            </li>
+        </tools>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>436</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defname>ExampleBullet_SawBlade</defname>
+        <label>saw blade</label>
+        <graphicData>
+            <texPath>MyFirstMod/Example_SawBlade</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>ExampleDamage_Saw</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <stoppingPower>1.5</stoppingPower>
+            <armorPenetrationBase>0.19</armorPenetrationBase>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
+</Defs>

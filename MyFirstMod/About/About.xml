@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <packageId>JellyDoge.MyFirstMod</packageId>
+    <name>MyFirstMod</name>
+    <author>JellyDoge</author>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <description>This is an example weapon mod made from the RimWorld Wiki.</description>
+</ModMetaData>

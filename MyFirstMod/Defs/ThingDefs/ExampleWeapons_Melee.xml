@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Example weapon: machete -->
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defname>ExampleMeleeWeapon_Machete</defname>
+        <label>Machete</label>
+        <description>A broad blade meant for cutting vegetation in overgrown environments, machetes
+            can be used as a broad-bladed combat knife in a pinch.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>MyFirstMod/ExampleWeapon_Machete</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <techLevel>Medieval</techLevel>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>0.75</Mass>
+        </statBases>
+        <equippedStatOffsets>
+            <PlantWorkSpeed>0.10</PlantWorkSpeed>
+        </equippedStatOffsets>
+        <relicChance>1</relicChance>
+        <tools>
+            <li>
+                <labeL>handle</labeL>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <labeL>point</labeL>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <labeL>edge</labeL>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>2</Crafting>
+            </skillRequirements>
+            <displayPriority>409</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+</Defs>

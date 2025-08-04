@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Example sound: saw launcher firing -->
+    <SoundDef>
+        <defName>ExampleWeapon_SawLauncher</defName>
+        <context>MapOnly</context>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MyFirstMod/Example_SawLaunch</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>40~45</volumeRange>
+                <pitchRange>0.8940217~1.084783</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- Example sound: saw launcher melee -->
+    <SoundDef>
+        <defName>ExampleWeapon_SawLauncherMelee</defName>
+        <context>MapOnly</context>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>MyFirstMod/Example_SawMelee</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>45~50</volumeRange>
+                <pitchRange>0.8940217~1.084783</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+</Defs>

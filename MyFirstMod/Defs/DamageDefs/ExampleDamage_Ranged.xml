@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Example damage type: ranged cut -->
+    <DamageDef ParentName="Arrow">
+        <defName>ExampleDamage_Saw</defName>
+        <label>Saw</label>
+        <deathMessage>{0} has been sliced to death by a saw blade.</deathMessage>
+    </DamageDef>
+
+</Defs>
